@@ -1,0 +1,1457 @@
+{
+ "version": "classical-v1.0",
+ "feature_set": "R2_F7 +cycle (minimal)",
+ "n_features": 290,
+ "features": [
+  {
+   "feature": "T24",
+   "group": "current",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30",
+   "group": "current",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50",
+   "group": "current",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15",
+   "group": "current",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30",
+   "group": "current",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf",
+   "group": "current",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc",
+   "group": "current",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr",
+   "group": "current",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30",
+   "group": "current",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi",
+   "group": "current",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf",
+   "group": "current",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc",
+   "group": "current",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR",
+   "group": "current",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB",
+   "group": "current",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed",
+   "group": "current",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31",
+   "group": "current",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32",
+   "group": "current",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_mean5",
+   "group": "mean",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_mean5",
+   "group": "mean",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_mean5",
+   "group": "mean",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_mean5",
+   "group": "mean",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_mean5",
+   "group": "mean",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_mean5",
+   "group": "mean",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_mean5",
+   "group": "mean",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_mean5",
+   "group": "mean",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_mean5",
+   "group": "mean",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_mean5",
+   "group": "mean",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_mean5",
+   "group": "mean",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_mean5",
+   "group": "mean",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_mean5",
+   "group": "mean",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_mean5",
+   "group": "mean",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_mean5",
+   "group": "mean",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_mean5",
+   "group": "mean",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_mean5",
+   "group": "mean",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_mean10",
+   "group": "mean",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_std10",
+   "group": "std",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_slope10",
+   "group": "slope",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_mean10",
+   "group": "mean",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_std10",
+   "group": "std",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_slope10",
+   "group": "slope",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_mean10",
+   "group": "mean",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_std10",
+   "group": "std",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_slope10",
+   "group": "slope",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_mean10",
+   "group": "mean",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_std10",
+   "group": "std",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_slope10",
+   "group": "slope",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_mean10",
+   "group": "mean",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_std10",
+   "group": "std",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_slope10",
+   "group": "slope",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_mean10",
+   "group": "mean",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_std10",
+   "group": "std",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_slope10",
+   "group": "slope",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_mean10",
+   "group": "mean",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_std10",
+   "group": "std",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_slope10",
+   "group": "slope",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_mean10",
+   "group": "mean",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_std10",
+   "group": "std",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_slope10",
+   "group": "slope",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_mean10",
+   "group": "mean",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_std10",
+   "group": "std",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_slope10",
+   "group": "slope",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_mean10",
+   "group": "mean",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_std10",
+   "group": "std",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_slope10",
+   "group": "slope",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_mean10",
+   "group": "mean",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_std10",
+   "group": "std",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_slope10",
+   "group": "slope",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_mean10",
+   "group": "mean",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_std10",
+   "group": "std",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_slope10",
+   "group": "slope",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_mean10",
+   "group": "mean",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_std10",
+   "group": "std",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_slope10",
+   "group": "slope",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_mean10",
+   "group": "mean",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_std10",
+   "group": "std",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_slope10",
+   "group": "slope",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_mean10",
+   "group": "mean",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_std10",
+   "group": "std",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_slope10",
+   "group": "slope",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_mean10",
+   "group": "mean",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_std10",
+   "group": "std",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_slope10",
+   "group": "slope",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_mean10",
+   "group": "mean",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_std10",
+   "group": "std",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_slope10",
+   "group": "slope",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_mean20",
+   "group": "mean",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_slope20",
+   "group": "slope",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_mean20",
+   "group": "mean",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_slope20",
+   "group": "slope",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_mean20",
+   "group": "mean",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_slope20",
+   "group": "slope",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_mean20",
+   "group": "mean",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_slope20",
+   "group": "slope",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_mean20",
+   "group": "mean",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_slope20",
+   "group": "slope",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_mean20",
+   "group": "mean",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_slope20",
+   "group": "slope",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_mean20",
+   "group": "mean",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_slope20",
+   "group": "slope",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_mean20",
+   "group": "mean",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_slope20",
+   "group": "slope",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_mean20",
+   "group": "mean",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_slope20",
+   "group": "slope",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_mean20",
+   "group": "mean",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_slope20",
+   "group": "slope",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_mean20",
+   "group": "mean",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_slope20",
+   "group": "slope",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_mean20",
+   "group": "mean",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_slope20",
+   "group": "slope",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_mean20",
+   "group": "mean",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_slope20",
+   "group": "slope",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_mean20",
+   "group": "mean",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_slope20",
+   "group": "slope",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_mean20",
+   "group": "mean",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_slope20",
+   "group": "slope",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_mean20",
+   "group": "mean",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_slope20",
+   "group": "slope",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_mean20",
+   "group": "mean",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_slope20",
+   "group": "slope",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_mean30",
+   "group": "mean",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_std30",
+   "group": "std",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_slope30",
+   "group": "slope",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_mean30",
+   "group": "mean",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_std30",
+   "group": "std",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_slope30",
+   "group": "slope",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_mean30",
+   "group": "mean",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_std30",
+   "group": "std",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_slope30",
+   "group": "slope",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_mean30",
+   "group": "mean",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_std30",
+   "group": "std",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_slope30",
+   "group": "slope",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_mean30",
+   "group": "mean",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_std30",
+   "group": "std",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_slope30",
+   "group": "slope",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_mean30",
+   "group": "mean",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_std30",
+   "group": "std",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_slope30",
+   "group": "slope",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_mean30",
+   "group": "mean",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_std30",
+   "group": "std",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_slope30",
+   "group": "slope",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_mean30",
+   "group": "mean",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_std30",
+   "group": "std",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_slope30",
+   "group": "slope",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_mean30",
+   "group": "mean",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_std30",
+   "group": "std",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_slope30",
+   "group": "slope",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_mean30",
+   "group": "mean",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_std30",
+   "group": "std",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_slope30",
+   "group": "slope",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_mean30",
+   "group": "mean",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_std30",
+   "group": "std",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_slope30",
+   "group": "slope",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_mean30",
+   "group": "mean",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_std30",
+   "group": "std",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_slope30",
+   "group": "slope",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_mean30",
+   "group": "mean",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_std30",
+   "group": "std",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_slope30",
+   "group": "slope",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_mean30",
+   "group": "mean",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_std30",
+   "group": "std",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_slope30",
+   "group": "slope",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_mean30",
+   "group": "mean",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_std30",
+   "group": "std",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_slope30",
+   "group": "slope",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_mean30",
+   "group": "mean",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_std30",
+   "group": "std",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_slope30",
+   "group": "slope",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_mean30",
+   "group": "mean",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_std30",
+   "group": "std",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_slope30",
+   "group": "slope",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_min10",
+   "group": "minmax",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_max10",
+   "group": "minmax",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_min10",
+   "group": "minmax",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_max10",
+   "group": "minmax",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_min10",
+   "group": "minmax",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_max10",
+   "group": "minmax",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_min10",
+   "group": "minmax",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_max10",
+   "group": "minmax",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_min10",
+   "group": "minmax",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_max10",
+   "group": "minmax",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_min10",
+   "group": "minmax",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_max10",
+   "group": "minmax",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_min10",
+   "group": "minmax",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_max10",
+   "group": "minmax",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_min10",
+   "group": "minmax",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_max10",
+   "group": "minmax",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_min10",
+   "group": "minmax",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_max10",
+   "group": "minmax",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_min10",
+   "group": "minmax",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_max10",
+   "group": "minmax",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_min10",
+   "group": "minmax",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_max10",
+   "group": "minmax",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_min10",
+   "group": "minmax",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_max10",
+   "group": "minmax",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_min10",
+   "group": "minmax",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_max10",
+   "group": "minmax",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_min10",
+   "group": "minmax",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_max10",
+   "group": "minmax",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_min10",
+   "group": "minmax",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_max10",
+   "group": "minmax",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_min10",
+   "group": "minmax",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_max10",
+   "group": "minmax",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_min10",
+   "group": "minmax",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_max10",
+   "group": "minmax",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_min30",
+   "group": "minmax",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T24_max30",
+   "group": "minmax",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_min30",
+   "group": "minmax",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T30_max30",
+   "group": "minmax",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_min30",
+   "group": "minmax",
+   "sensor": "T50"
+  },
+  {
+   "feature": "T50_max30",
+   "group": "minmax",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_min30",
+   "group": "minmax",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P15_max30",
+   "group": "minmax",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_min30",
+   "group": "minmax",
+   "sensor": "P30"
+  },
+  {
+   "feature": "P30_max30",
+   "group": "minmax",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_min30",
+   "group": "minmax",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nf_max30",
+   "group": "minmax",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_min30",
+   "group": "minmax",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "Nc_max30",
+   "group": "minmax",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_min30",
+   "group": "minmax",
+   "sensor": "epr"
+  },
+  {
+   "feature": "epr_max30",
+   "group": "minmax",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_min30",
+   "group": "minmax",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "Ps30_max30",
+   "group": "minmax",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_min30",
+   "group": "minmax",
+   "sensor": "phi"
+  },
+  {
+   "feature": "phi_max30",
+   "group": "minmax",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_min30",
+   "group": "minmax",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRf_max30",
+   "group": "minmax",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_min30",
+   "group": "minmax",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "NRc_max30",
+   "group": "minmax",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_min30",
+   "group": "minmax",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "BPR_max30",
+   "group": "minmax",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_min30",
+   "group": "minmax",
+   "sensor": "farB"
+  },
+  {
+   "feature": "farB_max30",
+   "group": "minmax",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_min30",
+   "group": "minmax",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "htBleed_max30",
+   "group": "minmax",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_min30",
+   "group": "minmax",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W31_max30",
+   "group": "minmax",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_min30",
+   "group": "minmax",
+   "sensor": "W32"
+  },
+  {
+   "feature": "W32_max30",
+   "group": "minmax",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_diff10",
+   "group": "delta",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_diff10",
+   "group": "delta",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_diff10",
+   "group": "delta",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_diff10",
+   "group": "delta",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_diff10",
+   "group": "delta",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_diff10",
+   "group": "delta",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_diff10",
+   "group": "delta",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_diff10",
+   "group": "delta",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_diff10",
+   "group": "delta",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_diff10",
+   "group": "delta",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_diff10",
+   "group": "delta",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_diff10",
+   "group": "delta",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_diff10",
+   "group": "delta",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_diff10",
+   "group": "delta",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_diff10",
+   "group": "delta",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_diff10",
+   "group": "delta",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_diff10",
+   "group": "delta",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_momentum",
+   "group": "delta",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_momentum",
+   "group": "delta",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_momentum",
+   "group": "delta",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_momentum",
+   "group": "delta",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_momentum",
+   "group": "delta",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_momentum",
+   "group": "delta",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_momentum",
+   "group": "delta",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_momentum",
+   "group": "delta",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_momentum",
+   "group": "delta",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_momentum",
+   "group": "delta",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_momentum",
+   "group": "delta",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_momentum",
+   "group": "delta",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_momentum",
+   "group": "delta",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_momentum",
+   "group": "delta",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_momentum",
+   "group": "delta",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_momentum",
+   "group": "delta",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_momentum",
+   "group": "delta",
+   "sensor": "W32"
+  },
+  {
+   "feature": "T24_delta_base",
+   "group": "baseline",
+   "sensor": "T24"
+  },
+  {
+   "feature": "T30_delta_base",
+   "group": "baseline",
+   "sensor": "T30"
+  },
+  {
+   "feature": "T50_delta_base",
+   "group": "baseline",
+   "sensor": "T50"
+  },
+  {
+   "feature": "P15_delta_base",
+   "group": "baseline",
+   "sensor": "P15"
+  },
+  {
+   "feature": "P30_delta_base",
+   "group": "baseline",
+   "sensor": "P30"
+  },
+  {
+   "feature": "Nf_delta_base",
+   "group": "baseline",
+   "sensor": "Nf"
+  },
+  {
+   "feature": "Nc_delta_base",
+   "group": "baseline",
+   "sensor": "Nc"
+  },
+  {
+   "feature": "epr_delta_base",
+   "group": "baseline",
+   "sensor": "epr"
+  },
+  {
+   "feature": "Ps30_delta_base",
+   "group": "baseline",
+   "sensor": "Ps30"
+  },
+  {
+   "feature": "phi_delta_base",
+   "group": "baseline",
+   "sensor": "phi"
+  },
+  {
+   "feature": "NRf_delta_base",
+   "group": "baseline",
+   "sensor": "NRf"
+  },
+  {
+   "feature": "NRc_delta_base",
+   "group": "baseline",
+   "sensor": "NRc"
+  },
+  {
+   "feature": "BPR_delta_base",
+   "group": "baseline",
+   "sensor": "BPR"
+  },
+  {
+   "feature": "farB_delta_base",
+   "group": "baseline",
+   "sensor": "farB"
+  },
+  {
+   "feature": "htBleed_delta_base",
+   "group": "baseline",
+   "sensor": "htBleed"
+  },
+  {
+   "feature": "W31_delta_base",
+   "group": "baseline",
+   "sensor": "W31"
+  },
+  {
+   "feature": "W32_delta_base",
+   "group": "baseline",
+   "sensor": "W32"
+  },
+  {
+   "feature": "cycle_feature",
+   "group": "cycle",
+   "sensor": "cycle"
+  }
+ ]
+}

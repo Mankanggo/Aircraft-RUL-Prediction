@@ -1,0 +1,13 @@
+subset,engines,n,rmse,bias,PHM08/engine
+FD001,all engines,100,12.63,-0.19,2.27
+FD001,true RUL ≤ 150 (primary-CV range),100,12.63,-0.19,2.27
+FD001,true RUL ≤ cap,92,11.79,1.39,2.14
+FD002,all engines,259,22.52,-5.85,16.77
+FD002,true RUL ≤ 150 (primary-CV range),223,13.12,0.88,3.22
+FD002,true RUL ≤ cap,204,12.0,2.79,3.04
+FD003,all engines,100,12.66,3.07,3.92
+FD003,true RUL ≤ 150 (primary-CV range),100,12.66,3.07,3.92
+FD003,true RUL ≤ cap,96,12.4,3.86,3.95
+FD004,all engines,248,20.7,-3.67,8.87
+FD004,true RUL ≤ 150 (primary-CV range),206,14.31,3.04,5.15
+FD004,true RUL ≤ cap,196,13.98,4.09,5.2

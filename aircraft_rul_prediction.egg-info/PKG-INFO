@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: aircraft-rul-prediction
+Version: 0.0.1
+Author: Mayank Parab
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: requires-dist

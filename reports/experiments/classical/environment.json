@@ -1,0 +1,29 @@
+{
+  "python": "3.13.7",
+  "argv": [
+    "C:\\Users\\Mayank\\Aircravft_RUL\\src\\pipelines\\classical_experiments.py",
+    "--stage",
+    "finalize",
+    "--subsets",
+    "FD004"
+  ],
+  "seed": 42,
+  "confirm_seed": 2024,
+  "ablation_cap": 125,
+  "cap_grid": [
+    100,
+    110,
+    120,
+    125,
+    130,
+    140,
+    150
+  ],
+  "full_config": "FeatureConfig(groups=('current', 'mean', 'std', 'minmax', 'slope', 'delta', 'baseline', 'expanding'), mean_windows=(5, 10, 20, 30), std_windows=(10, 30), slope_windows=(10, 20, 30), minmax_windows=(10, 30), delta_lags=(10,), momentum_long=30, smooth_window=5, baseline_cycles=10, sensors=('T24', 'T30', 'T50', 'P15', 'P30', 'Nf', 'Nc', 'epr', 'Ps30', 'phi', 'NRf', 'NRc', 'BPR', 'farB', 'htBleed', 'W31', 'W32'), derived=True, normalize=True, health_index=True, hi_window=10, hi_cap=125, hi_crossfit_folds=5, include_cycle=True)",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "sklearn": "1.9.1",
+  "xgboost": "3.4.1",
+  "lightgbm": "4.7.0",
+  "n_jobs_per_model": "4"
+}

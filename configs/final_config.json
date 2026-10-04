@@ -1,0 +1,260 @@
+{
+  "version": "classical-v1.0",
+  "feature_set": {
+    "name": "R2_F7 +cycle (minimal)",
+    "n_features": 290,
+    "feature_config": {
+      "groups": [
+        "current",
+        "mean",
+        "std",
+        "minmax",
+        "slope",
+        "delta",
+        "baseline"
+      ],
+      "mean_windows": [
+        5,
+        10,
+        20,
+        30
+      ],
+      "std_windows": [
+        10,
+        30
+      ],
+      "slope_windows": [
+        10,
+        20,
+        30
+      ],
+      "minmax_windows": [
+        10,
+        30
+      ],
+      "delta_lags": [
+        10
+      ],
+      "momentum_long": 30,
+      "smooth_window": 5,
+      "baseline_cycles": 10,
+      "sensors": [
+        "T24",
+        "T30",
+        "T50",
+        "P15",
+        "P30",
+        "Nf",
+        "Nc",
+        "epr",
+        "Ps30",
+        "phi",
+        "NRf",
+        "NRc",
+        "BPR",
+        "farB",
+        "htBleed",
+        "W31",
+        "W32"
+      ],
+      "derived": false,
+      "normalize": true,
+      "health_index": false,
+      "hi_window": 10,
+      "hi_cap": 125,
+      "hi_crossfit_folds": 5,
+      "include_cycle": true
+    },
+    "feature_list_file": "configs\\final_feature_list.json"
+  },
+  "preprocessing": {
+    "input_columns": "unit_id, cycle, op_setting_1..3, 21 Table-2 sensors (src/data_schema.py)",
+    "operating_condition": "settings rounded to (0, 2, 0) decimals -> 6 known centres (stateless)",
+    "normalisation": "per-condition z-score of the 17 candidate sensors, statistics from training engines only",
+    "excluded_sensors": [
+      "T2",
+      "P2",
+      "Nf_dmd",
+      "PCNfR_dmd"
+    ],
+    "feature_scaling": "per-feature standardisation with training statistics (irrelevant for trees, kept for parity with CV)",
+    "causality": "every feature at cycle t uses only cycles <= t of the same engine"
+  },
+  "target": {
+    "definition": "RUL = last cycle of the training engine - current cycle (failure row = 0)",
+    "training_target": "min(RUL, rul_cap)",
+    "evaluation_target": "uncapped true RUL"
+  },
+  "models": {
+    "FD001": {
+      "family": "xgboost",
+      "rul_cap": 130.0,
+      "params": {
+        "colsample_bytree": 0.3,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "n_estimators": 500,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      }
+    },
+    "FD002": {
+      "family": "xgboost",
+      "rul_cap": 130.0,
+      "params": {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 10,
+        "n_estimators": 500,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      }
+    },
+    "FD003": {
+      "family": "lightgbm",
+      "rul_cap": 140.0,
+      "params": {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 400,
+        "num_leaves": 31,
+        "reg_lambda": 1.0,
+        "subsample": 0.8
+      }
+    },
+    "FD004": {
+      "family": "lightgbm",
+      "rul_cap": 140.0,
+      "params": {
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.05,
+        "min_child_samples": 50,
+        "n_estimators": 500,
+        "num_leaves": 31,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      }
+    }
+  },
+  "training_protocol": {
+    "data": "all rows (every cycle) of ALL training engines of the subset; one model per subset",
+    "prediction": "one prediction per engine at its last observed cycle, clipped at >= 0",
+    "seed": 42,
+    "n_jobs": 4,
+    "deterministic": "fixed seeds; LightGBM deterministic=True; XGBoost 'hist' results depend on the thread count, so models are fitted with exactly n_jobs threads (the setting used in validation)"
+  },
+  "validation_protocol": {
+    "folds": "5 engine-level folds per subset, lifespan-stratified, seed 42",
+    "validation_samples": "10 truncated samples per engine, strategy=uniform, true RUL at cut in [6, 150]",
+    "confirmation_plan": "same, seed 2024",
+    "wide_plan": "RUL at cut in [6, 190]",
+    "cap_rule": "lowest CV RMSE; tie-break largest cap within 1 SE",
+    "documents": [
+      "reports/target_and_validation_protocol.md",
+      "reports/classical_ml_stage_report.md"
+    ]
+  },
+  "cv_results": {
+    "FD001": {
+      "primary": {
+        "rmse": 13.581,
+        "mae": 10.1283,
+        "bias": -0.4488,
+        "phm08_score_per_sample": 2.9285,
+        "rmse_fold_std": 0.4279
+      },
+      "confirm": {
+        "rmse": 13.3807,
+        "mae": 9.9737,
+        "bias": -0.1107,
+        "phm08_score_per_sample": 2.875,
+        "rmse_fold_std": 0.6989
+      },
+      "wide": {
+        "rmse": 22.7011,
+        "mae": 15.7729,
+        "bias": -7.5977,
+        "phm08_score_per_sample": 10.8867,
+        "rmse_fold_std": 1.8087
+      }
+    },
+    "FD002": {
+      "primary": {
+        "rmse": 14.3748,
+        "mae": 10.56,
+        "bias": 0.0199,
+        "phm08_score_per_sample": 3.668,
+        "rmse_fold_std": 0.3672
+      },
+      "confirm": {
+        "rmse": 14.2157,
+        "mae": 10.4728,
+        "bias": -0.0656,
+        "phm08_score_per_sample": 3.3307,
+        "rmse_fold_std": 0.4724
+      },
+      "wide": {
+        "rmse": 23.1059,
+        "mae": 16.4623,
+        "bias": -6.9022,
+        "phm08_score_per_sample": 11.2078,
+        "rmse_fold_std": 1.0394
+      }
+    },
+    "FD003": {
+      "primary": {
+        "rmse": 14.0013,
+        "mae": 9.9334,
+        "bias": 0.7205,
+        "phm08_score_per_sample": 3.5548,
+        "rmse_fold_std": 1.3776
+      },
+      "confirm": {
+        "rmse": 12.692,
+        "mae": 9.0604,
+        "bias": 1.2005,
+        "phm08_score_per_sample": 2.8547,
+        "rmse_fold_std": 1.097
+      },
+      "wide": {
+        "rmse": 21.4122,
+        "mae": 15.0374,
+        "bias": -6.0771,
+        "phm08_score_per_sample": 9.9003,
+        "rmse_fold_std": 2.0911
+      }
+    },
+    "FD004": {
+      "primary": {
+        "rmse": 15.846,
+        "mae": 11.5299,
+        "bias": 2.1171,
+        "phm08_score_per_sample": 6.1767,
+        "rmse_fold_std": 1.8871
+      },
+      "confirm": {
+        "rmse": 16.1689,
+        "mae": 11.8214,
+        "bias": 2.5886,
+        "phm08_score_per_sample": 6.9295,
+        "rmse_fold_std": 1.0854
+      },
+      "wide": {
+        "rmse": 22.7137,
+        "mae": 16.6177,
+        "bias": -5.0134,
+        "phm08_score_per_sample": 63.8733,
+        "rmse_fold_std": 2.3307
+      }
+    }
+  },
+  "official_test_set": "not used for any selection; to be read only by src/pipelines/evaluate_test.py after training",
+  "frozen": {
+    "at": "2026-10-04 21:16:41",
+    "config_body_sha256": "949c7370903dfce901c1ccebe1d850ee0a2c393bc7bbcf0dd08222cbc189e4d4",
+    "feature_list_sha256": "3d5d10589098773934b91e5d14e9ca98576170e1d663622428af12d1104c6524"
+  }
+}

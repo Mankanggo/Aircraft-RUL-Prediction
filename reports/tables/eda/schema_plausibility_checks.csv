@@ -1,0 +1,9 @@
+check,passed,value
+FD001 T2 == ISA sea-level 518.67 °R,True,T2=518.67
+FD001 P2 ≈ 14.696 psia (sea level),True,P2=14.62
+"T2 < T24 < T30 (all rows, FD001+FD002)",True,
+"P2 < P15 < P30 (all rows, FD001+FD002)",True,
+Nf ≈ Nf_dmd (median rel. error < 0.1%),True,5.16e-05
+"NRf ≈ Nf*sqrt(518.67/T2), FD002 all conditions",True,1.26e-05
+"NRc ≈ Nc*sqrt(518.67/T24), FD002 all conditions",True,4.37e-04
+Nc > Nf (core spool faster than fan),True,

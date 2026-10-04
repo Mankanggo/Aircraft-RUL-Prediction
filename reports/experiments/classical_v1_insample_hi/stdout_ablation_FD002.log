@@ -1,0 +1,28 @@
+[12:35:51] ablation FD002: fold data (raw=False) built in 135s, 405 features
+[12:35:57] ablation FD002 F1_current: 17 features, lightgbm RMSE 23.76, ridge 24.90
+[12:36:19] ablation FD002 F2_+mean: 85 features, lightgbm RMSE 20.35, ridge 20.37
+[12:36:52] ablation FD002 F3_+std: 119 features, lightgbm RMSE 20.51, ridge 20.37
+[12:37:43] ablation FD002 F4_+minmax: 187 features, lightgbm RMSE 21.39, ridge 20.12
+[12:38:59] ablation FD002 F5_+slope: 238 features, lightgbm RMSE 18.89, ridge 20.07
+[12:40:58] ablation FD002 F6_+delta: 272 features, lightgbm RMSE 18.79, ridge 20.02
+[12:43:39] ablation FD002 F7_+baseline: 289 features, lightgbm RMSE 17.23, ridge 19.09
+[12:46:39] ablation FD002 F8_+expanding: 323 features, lightgbm RMSE 18.06, ridge 18.79
+[12:50:40] ablation FD002 F9_+derived: 399 features, lightgbm RMSE 18.11, ridge 19.05
+[12:54:16] ablation FD002 F10_+health_index (FULL): 404 features, lightgbm RMSE 17.81, ridge 19.03
+[12:57:55] ablation FD002 F11_+cycle: 405 features, lightgbm RMSE 15.78, ridge 18.93
+[13:02:03] ablation FD002 LOGO_-current: 383 features, lightgbm RMSE 17.59, ridge 19.04
+[13:04:48] ablation FD002 LOGO_-mean: 320 features, lightgbm RMSE 17.68, ridge 19.22
+[13:07:35] ablation FD002 LOGO_-std: 362 features, lightgbm RMSE 17.57, ridge 19.16
+[13:09:34] ablation FD002 LOGO_-minmax: 320 features, lightgbm RMSE 17.79, ridge 19.36
+[13:10:55] ablation FD002 LOGO_-slope: 341 features, lightgbm RMSE 17.71, ridge 19.05
+[13:12:39] ablation FD002 LOGO_-delta: 362 features, lightgbm RMSE 17.68, ridge 19.03
+[13:14:20] ablation FD002 LOGO_-baseline: 383 features, lightgbm RMSE 18.24, ridge 18.85
+[13:16:22] ablation FD002 LOGO_-expanding: 362 features, lightgbm RMSE 17.10, ridge 19.06
+[13:17:43] ablation FD002 LOGO_-derived: 328 features, lightgbm RMSE 17.66, ridge 18.79
+[13:19:44] ablation FD002 LOGO_-health_index: 399 features, lightgbm RMSE 18.11, ridge 19.05
+[13:20:06] ablation FD002 S_core5_only: 95 features, lightgbm RMSE 18.74, ridge 19.25
+[13:21:07] ablation FD002 S_-fault_mode_sensors: 266 features, lightgbm RMSE 18.31, ridge 19.02
+[13:22:36] ablation FD002 S_-weak_sensors: 342 features, lightgbm RMSE 18.17, ridge 19.30
+[13:24:02] ablation FD002 S_-corrected_speeds: 361 features, lightgbm RMSE 18.29, ridge 19.05
+[13:26:00] ablation FD002: fold data (raw=True) built in 117s, 411 features
+[13:27:37] ablation FD002 RAW_FULL (no condition normalisation): 410 features, lightgbm RMSE 18.75, ridge 19.85

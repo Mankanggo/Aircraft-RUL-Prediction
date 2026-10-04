@@ -1,0 +1,17 @@
+,,FD001,FD002,FD003,FD004
+train row RUL,count,20631.0,53759.0,24720.0,61249.0
+train row RUL,mean,107.8,108.2,138.1,133.3
+train row RUL,std,68.9,69.2,98.8,89.8
+train row RUL,min,0.0,0.0,0.0,0.0
+train row RUL,25%,51.0,51.0,61.0,61.0
+train row RUL,50%,103.0,103.0,123.0,122.0
+train row RUL,75%,155.0,156.0,190.0,190.0
+train row RUL,max,361.0,377.0,524.0,542.0
+test end RUL,count,100.0,259.0,100.0,248.0
+test end RUL,mean,75.5,81.2,75.3,86.6
+test end RUL,std,41.8,53.9,41.6,54.6
+test end RUL,min,7.0,6.0,6.0,6.0
+test end RUL,25%,32.8,35.0,43.2,36.0
+test end RUL,50%,86.0,80.0,77.5,88.0
+test end RUL,75%,112.2,121.0,115.0,126.8
+test end RUL,max,145.0,194.0,145.0,195.0

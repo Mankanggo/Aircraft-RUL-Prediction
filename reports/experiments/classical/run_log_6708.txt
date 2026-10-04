@@ -1,0 +1,12 @@
+[2026-10-04 14:59:31] tune: feature set = R2_F7 +cycle (minimal)
+[2026-10-04 15:00:39] tune FD003: fold data built in 67s, 290 features
+[2026-10-04 15:00:42] tune FD003 ridge: 5 configs @cap 125, best RMSE 20.30
+[2026-10-04 15:00:47] tune FD003 ridge: selected cap 130, RMSE 20.39 ± 1.23
+[2026-10-04 15:00:55] tune FD003 elasticnet: 8 configs @cap 125, best RMSE 20.27
+[2026-10-04 15:01:14] tune FD003 elasticnet: selected cap 130, RMSE 20.38 ± 1.18
+[2026-10-04 15:08:37] tune FD003 random_forest: 6 configs @cap 125, best RMSE 15.99
+[2026-10-04 15:24:23] tune FD003 random_forest: selected cap 140, RMSE 15.88 ± 1.20
+[2026-10-04 15:32:33] tune FD003 xgboost: 8 configs @cap 125, best RMSE 14.32
+[2026-10-04 15:38:51] tune FD003 xgboost: selected cap 150, RMSE 14.47 ± 1.53
+[2026-10-04 15:46:22] tune FD003 lightgbm: 8 configs @cap 125, best RMSE 14.25
+[2026-10-04 15:50:39] tune FD003 lightgbm: selected cap 140, RMSE 14.00 ± 1.38

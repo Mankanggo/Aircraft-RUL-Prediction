@@ -1,0 +1,5 @@
+subset,best set (single seed),RMSE,2nd,RMSE 2nd,R2 RMSE (5-seed mean ± std),R1 RMSE (5-seed mean ± std),F11 RMSE (5-seed mean ± std)
+FD001,R2_F7 +cycle (minimal),14.05,R3_R1 -health_index,14.15,14.25 ± 0.05,14.17 ± 0.11,15.17 ± 0.10
+FD002,R2_F7 +cycle (minimal),14.65,R3_R1 -health_index,14.86,14.75 ± 0.03,14.97 ± 0.04,15.77 ± 0.09
+FD003,R2_F7 +cycle (minimal),14.25,R3_R1 -health_index,14.54,14.48 ± 0.16,14.79 ± 0.21,15.81 ± 0.23
+FD004,R3_R1 -health_index,15.72,R2_F7 +cycle (minimal),15.78,15.88 ± 0.05,15.93 ± 0.04,17.11 ± 0.08

@@ -1,0 +1,6 @@
+model,mean RMSE primary,mean RMSE confirm,mean RMSE wide,mean PHM08/sample primary,"mean rank (primary+confirm, 8 cases)"
+lightgbm,14.57,14.3,22.04,4.29,1.62
+xgboost,14.61,14.25,22.04,4.41,1.38
+random_forest,16.21,15.9,23.45,5.51,3.0
+elasticnet,19.97,19.8,27.82,8.12,4.25
+ridge,20.0,19.86,27.83,8.17,4.75

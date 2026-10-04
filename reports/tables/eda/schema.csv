@@ -1,0 +1,27 @@
+file_column,name,role,raw_readme_name,description,units
+1,unit_id,id,unit number,,
+2,cycle,time,"time, in cycles",,
+3,op_setting_1,operating setting,operational setting 1,,
+4,op_setting_2,operating setting,operational setting 2,,
+5,op_setting_3,operating setting,operational setting 3,,
+6,T2,sensor,sensor measurement 1,Total temperature at fan inlet,°R
+7,T24,sensor,sensor measurement 2,Total temperature at LPC outlet,°R
+8,T30,sensor,sensor measurement 3,Total temperature at HPC outlet,°R
+9,T50,sensor,sensor measurement 4,Total temperature at LPT outlet,°R
+10,P2,sensor,sensor measurement 5,Pressure at fan inlet,psia
+11,P15,sensor,sensor measurement 6,Total pressure in bypass-duct,psia
+12,P30,sensor,sensor measurement 7,Total pressure at HPC outlet,psia
+13,Nf,sensor,sensor measurement 8,Physical fan speed,rpm
+14,Nc,sensor,sensor measurement 9,Physical core speed,rpm
+15,epr,sensor,sensor measurement 10,Engine pressure ratio (P50/P2),--
+16,Ps30,sensor,sensor measurement 11,Static pressure at HPC outlet,psia
+17,phi,sensor,sensor measurement 12,Ratio of fuel flow to Ps30,pps/psi
+18,NRf,sensor,sensor measurement 13,Corrected fan speed,rpm
+19,NRc,sensor,sensor measurement 14,Corrected core speed,rpm
+20,BPR,sensor,sensor measurement 15,Bypass Ratio,--
+21,farB,sensor,sensor measurement 16,Burner fuel-air ratio,--
+22,htBleed,sensor,sensor measurement 17,Bleed Enthalpy,--
+23,Nf_dmd,sensor,sensor measurement 18,Demanded fan speed,rpm
+24,PCNfR_dmd,sensor,sensor measurement 19,Demanded corrected fan speed,rpm
+25,W31,sensor,sensor measurement 20,HPT coolant bleed,lbm/s
+26,W32,sensor,sensor measurement 21,LPT coolant bleed,lbm/s

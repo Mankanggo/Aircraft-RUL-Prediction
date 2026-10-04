@@ -1,0 +1,6 @@
+subset,model,cap,engines,test RMSE,test MAE,test bias,test PHM08 (sum),test PHM08/engine,CV RMSE primary (RUL≤150),CV RMSE confirm,CV RMSE wide (RUL≤190),share of test engines with RUL > cap,test RMSE vs capped truth (secondary)
+FD001,xgboost,130.0,100,12.627,9.222,-0.187,227.141,2.271,13.581,13.381,22.701,0.08,12.092
+FD002,xgboost,130.0,259,22.524,14.323,-5.846,4342.443,16.766,14.375,14.216,23.106,0.212,11.773
+FD003,lightgbm,140.0,100,12.661,8.674,3.07,391.878,3.919,14.001,12.692,21.412,0.04,12.465
+FD004,lightgbm,140.0,248,20.703,14.471,-3.675,2199.77,8.87,15.846,16.169,22.714,0.21,13.709
+ALL (707 engines),per subset,,707,19.53,12.854,-3.023,7161.232,10.129,,,,0.168,12.623

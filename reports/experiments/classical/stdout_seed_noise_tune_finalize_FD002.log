@@ -1,0 +1,32 @@
+[14:57:54] seed_noise FD002 F11_+cycle: RMSE over seeds [15.72, 15.88, 15.84, 15.76, 15.66]
+[15:06:34] seed_noise FD002 R1_F11 -expanding: RMSE over seeds [14.94, 15.02, 14.92, 14.99, 15.0]
+[15:12:50] seed_noise FD002 R2_F7 +cycle (minimal): RMSE over seeds [14.77, 14.74, 14.75, 14.7, 14.78]
+[15:12:54] tune: feature set = R2_F7 +cycle (minimal)
+[15:14:53] tune FD002: fold data built in 117s, 290 features
+[15:15:02] tune FD002 ridge: 5 configs @cap 125, best RMSE 18.99
+[15:15:14] tune FD002 ridge: selected cap 130, RMSE 19.05 ± 0.96
+[15:15:41] tune FD002 elasticnet: 8 configs @cap 125, best RMSE 19.01
+[15:16:29] tune FD002 elasticnet: selected cap 130, RMSE 19.04 ± 0.80
+[15:38:45] tune FD002 random_forest: 6 configs @cap 125, best RMSE 16.34
+[16:19:07] tune FD002 random_forest: selected cap 130, RMSE 16.21 ± 0.52
+[16:31:44] tune FD002 xgboost: 8 configs @cap 125, best RMSE 14.51
+[16:40:37] tune FD002 xgboost: selected cap 130, RMSE 14.37 ± 0.37
+[16:48:16] tune FD002 lightgbm: 8 configs @cap 125, best RMSE 14.65
+[16:57:17] tune FD002 lightgbm: selected cap 130, RMSE 14.52 ± 0.36
+[16:59:06] finalize FD002 wide ridge: RMSE 27.19
+[16:59:09] finalize FD002 wide elasticnet: RMSE 27.30
+[17:04:27] finalize FD002 wide random_forest: RMSE 24.58
+[17:05:37] finalize FD002 wide xgboost: RMSE 23.11
+[17:06:23] finalize FD002 wide lightgbm: RMSE 23.26
+[17:07:38] finalize FD002 confirm ridge: RMSE 19.23
+[17:07:40] finalize FD002 confirm elasticnet: RMSE 19.24
+[17:11:48] finalize FD002 confirm random_forest: RMSE 16.36
+[17:13:00] finalize FD002 confirm xgboost: RMSE 14.22
+[17:13:47] finalize FD002 confirm lightgbm: RMSE 14.49
+[17:15:04] finalize FD002 primary ridge: RMSE 19.05
+[17:15:06] finalize FD002 primary elasticnet: RMSE 19.04
+[17:19:14] finalize FD002 primary random_forest: RMSE 16.21
+[17:20:04] finalize FD002 primary xgboost: RMSE 14.37
+[17:20:38] finalize FD002 primary lightgbm: RMSE 14.52
+[17:21:33] finalize FD002: importance computed for xgboost
+[17:22:12] finalize FD002: importance computed for lightgbm

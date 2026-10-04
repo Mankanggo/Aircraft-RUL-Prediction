@@ -1,0 +1,30 @@
+feature set,groups,sensors,raw,n_features
+F1_current,current,17,False,17
+F2_+mean,current+mean,17,False,85
+F3_+std,current+mean+std,17,False,119
+F4_+minmax,current+mean+std+minmax,17,False,187
+F5_+slope,current+mean+std+minmax+slope,17,False,238
+F6_+delta,current+mean+std+minmax+slope+delta,17,False,272
+F7_+baseline,current+mean+std+minmax+slope+delta+baseline,17,False,289
+F8_+expanding,current+mean+std+minmax+slope+delta+baseline+expanding,17,False,323
+F9_+derived,current+mean+std+minmax+slope+delta+baseline+expanding,21,False,399
+F10_+health_index (FULL),current+mean+std+minmax+slope+delta+baseline+expanding +HI,21,False,404
+F11_+cycle,current+mean+std+minmax+slope+delta+baseline+expanding +HI +cycle,21,False,405
+LOGO_-current,mean+std+minmax+slope+delta+baseline+expanding +HI,21,False,383
+LOGO_-mean,current+std+minmax+slope+delta+baseline+expanding +HI,21,False,320
+LOGO_-std,current+mean+minmax+slope+delta+baseline+expanding +HI,21,False,362
+LOGO_-minmax,current+mean+std+slope+delta+baseline+expanding +HI,21,False,320
+LOGO_-slope,current+mean+std+minmax+delta+baseline+expanding +HI,21,False,341
+LOGO_-delta,current+mean+std+minmax+slope+baseline+expanding +HI,21,False,362
+LOGO_-baseline,current+mean+std+minmax+slope+delta+expanding +HI,21,False,383
+LOGO_-expanding,current+mean+std+minmax+slope+delta+baseline +HI,21,False,362
+LOGO_-derived,current+mean+std+minmax+slope+delta+baseline+expanding +HI,17,False,328
+LOGO_-health_index,current+mean+std+minmax+slope+delta+baseline+expanding,21,False,399
+RAW_FULL (no condition normalisation),current+mean+std+minmax+slope+delta+baseline+expanding +HI,21,True,410
+S_core5_only,current+mean+std+minmax+slope+delta+baseline+expanding,5,False,95
+S_-fault_mode_sensors,current+mean+std+minmax+slope+delta+baseline+expanding,14,False,266
+S_-weak_sensors,current+mean+std+minmax+slope+delta+baseline+expanding,18,False,342
+S_-corrected_speeds,current+mean+std+minmax+slope+delta+baseline+expanding,19,False,361
+R1_F11 -expanding,current+mean+std+minmax+slope+delta+baseline +HI +cycle,21,False,363
+R2_F7 +cycle (minimal),current+mean+std+minmax+slope+delta+baseline +cycle,17,False,290
+R3_R1 -health_index,current+mean+std+minmax+slope+delta+baseline +cycle,21,False,358

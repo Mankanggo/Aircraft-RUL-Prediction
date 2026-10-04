@@ -1,0 +1,16 @@
+[2026-10-04 17:20:25] finalize FD004 wide ridge: RMSE 29.42
+[2026-10-04 17:20:27] finalize FD004 wide elasticnet: RMSE 29.41
+[2026-10-04 17:25:41] finalize FD004 wide random_forest: RMSE 24.33
+[2026-10-04 17:26:50] finalize FD004 wide xgboost: RMSE 22.83
+[2026-10-04 17:27:53] finalize FD004 wide lightgbm: RMSE 22.71
+[2026-10-04 17:29:12] finalize FD004 confirm ridge: RMSE 21.11
+[2026-10-04 17:29:12] finalize FD004 confirm elasticnet: RMSE 21.08
+[2026-10-04 17:35:50] finalize FD004 confirm random_forest: RMSE 17.85
+[2026-10-04 17:36:45] finalize FD004 confirm xgboost: RMSE 16.00
+[2026-10-04 17:37:51] finalize FD004 confirm lightgbm: RMSE 16.17
+[2026-10-04 17:39:17] finalize FD004 primary ridge: RMSE 21.02
+[2026-10-04 17:39:17] finalize FD004 primary elasticnet: RMSE 21.02
+[2026-10-04 17:45:50] finalize FD004 primary random_forest: RMSE 17.58
+[2026-10-04 17:46:36] finalize FD004 primary xgboost: RMSE 15.99
+[2026-10-04 17:47:14] finalize FD004 primary lightgbm: RMSE 15.85
+[2026-10-04 17:47:55] finalize FD004: importance computed for lightgbm

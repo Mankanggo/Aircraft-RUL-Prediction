@@ -1,0 +1,31 @@
+[14:47:03] seed_noise FD003 F11_+cycle: RMSE over seeds [15.79, 16.14, 15.68, 15.9, 15.54]
+[14:54:56] seed_noise FD003 R1_F11 -expanding: RMSE over seeds [14.73, 14.76, 14.57, 15.14, 14.74]
+[14:59:27] seed_noise FD003 R2_F7 +cycle (minimal): RMSE over seeds [14.34, 14.76, 14.4, 14.41, 14.5]
+[14:59:31] tune: feature set = R2_F7 +cycle (minimal)
+[15:00:39] tune FD003: fold data built in 67s, 290 features
+[15:00:42] tune FD003 ridge: 5 configs @cap 125, best RMSE 20.30
+[15:00:47] tune FD003 ridge: selected cap 130, RMSE 20.39 ± 1.23
+[15:00:55] tune FD003 elasticnet: 8 configs @cap 125, best RMSE 20.27
+[15:01:14] tune FD003 elasticnet: selected cap 130, RMSE 20.38 ± 1.18
+[15:08:37] tune FD003 random_forest: 6 configs @cap 125, best RMSE 15.99
+[15:24:23] tune FD003 random_forest: selected cap 140, RMSE 15.88 ± 1.20
+[15:32:33] tune FD003 xgboost: 8 configs @cap 125, best RMSE 14.32
+[15:38:51] tune FD003 xgboost: selected cap 150, RMSE 14.47 ± 1.53
+[15:46:22] tune FD003 lightgbm: 8 configs @cap 125, best RMSE 14.25
+[15:50:39] tune FD003 lightgbm: selected cap 140, RMSE 14.00 ± 1.38
+[15:51:46] finalize FD003 wide ridge: RMSE 28.69
+[15:51:49] finalize FD003 wide elasticnet: RMSE 28.68
+[15:53:46] finalize FD003 wide random_forest: RMSE 22.74
+[15:54:28] finalize FD003 wide xgboost: RMSE 19.51
+[15:54:58] finalize FD003 wide lightgbm: RMSE 21.41
+[15:55:45] finalize FD003 confirm ridge: RMSE 19.36
+[15:55:48] finalize FD003 confirm elasticnet: RMSE 19.42
+[15:57:37] finalize FD003 confirm random_forest: RMSE 14.54
+[15:58:18] finalize FD003 confirm xgboost: RMSE 13.39
+[15:58:48] finalize FD003 confirm lightgbm: RMSE 12.69
+[15:59:36] finalize FD003 primary ridge: RMSE 20.39
+[15:59:38] finalize FD003 primary elasticnet: RMSE 20.38
+[16:01:27] finalize FD003 primary random_forest: RMSE 15.88
+[16:02:08] finalize FD003 primary xgboost: RMSE 14.47
+[16:02:37] finalize FD003 primary lightgbm: RMSE 14.00
+[16:03:08] finalize FD003: importance computed for lightgbm

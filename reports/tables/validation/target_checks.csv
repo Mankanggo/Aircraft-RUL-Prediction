@@ -1,0 +1,5 @@
+subset,train: RUL == T - t (all rows),train: RUL == 0 at failure row,train: steps of -1,test: last-row RUL == RUL file,test: steps of -1,train RUL range,test RUL range (all rows)
+FD001,True,True,True,True,True,0-361,7-340
+FD002,True,True,True,True,True,0-377,6-377
+FD003,True,True,True,True,True,0-524,6-483
+FD004,True,True,True,True,True,0-542,6-553

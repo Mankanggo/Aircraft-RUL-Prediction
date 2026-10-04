@@ -1,0 +1,13 @@
+subset,design,KS RUL at cut vs test RUL,share of test RULs above design max
+FD001,"primary: uniform, max 150",0.106,0.0
+FD001,"wide: uniform, max 190",0.221,0.0
+FD001,unbounded,0.285,0.0
+FD002,"primary: uniform, max 150",0.139,0.139
+FD002,"wide: uniform, max 190",0.137,0.015
+FD002,unbounded,0.17,0.0
+FD003,"primary: uniform, max 150",0.066,0.0
+FD003,"wide: uniform, max 190",0.225,0.0
+FD003,unbounded,0.37,0.0
+FD004,"primary: uniform, max 150",0.169,0.169
+FD004,"wide: uniform, max 190",0.097,0.016
+FD004,unbounded,0.205,0.0

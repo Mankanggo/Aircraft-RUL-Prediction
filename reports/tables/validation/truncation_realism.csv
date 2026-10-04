@@ -1,0 +1,9 @@
+subset,strategy,samples,engines,length median,test length median,KS length vs test (label-free),RUL at cut median,RUL at cut max,share RUL > 200
+FD001,test_lengths (chosen),1000,100,125.0,133.5,0.127,80.0,312,0.05
+FD001,uniform,1000,100,98.0,133.5,0.246,100.0,336,0.076
+FD002,test_lengths (chosen),2600,260,109.0,132.0,0.156,90.0,338,0.062
+FD002,uniform,2600,260,96.0,132.0,0.202,101.0,370,0.072
+FD003,test_lengths (chosen),1000,100,122.0,148.0,0.204,102.0,457,0.151
+FD003,uniform,1000,100,114.5,148.0,0.219,115.5,490,0.166
+FD004,test_lengths (chosen),2490,249,121.0,153.5,0.197,106.0,489,0.145
+FD004,uniform,2490,249,109.0,153.5,0.22,115.0,478,0.173

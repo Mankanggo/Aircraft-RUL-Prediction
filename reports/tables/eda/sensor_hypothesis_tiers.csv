@@ -1,0 +1,22 @@
+,FD001,FD002,FD003,FD004,description,fault-mode separation |d| FD003 / FD004,highly correlated with (|ρ|≥0.85)
+T2,U: constant,U: condition-determined,U: constant,U: condition-determined,Total temperature at fan inlet,- / -,
+T24,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,Total temperature at LPC outlet,0.1 / 0.6,
+T30,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,Total temperature at HPC outlet,2.1 / 1.6,
+T50,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,Total temperature at LPT outlet,0.6 / 1.0,
+P2,U: constant,U: condition-determined,U: constant,U: condition-determined,Pressure at fan inlet,- / -,
+P15,D: no clear trend (noise / quantised),C: weak trend,D: no clear trend (noise / quantised),C: weak trend,Total pressure in bypass-duct,0.4 / 1.9,
+P30,A: consistent monotonic trend,A: consistent monotonic trend,"B: strong trend, direction varies across units","B: strong trend, direction varies across units",Total pressure at HPC outlet,14.7 / 13.0,phi
+Nf,A: consistent monotonic trend,"B: strong trend, direction varies across units",A: consistent monotonic trend,"B: strong trend, direction varies across units",Physical fan speed,3.8 / 1.6,NRf
+Nc,"B: strong trend, direction varies across units","B: strong trend, direction varies across units","B: strong trend, direction varies across units","B: strong trend, direction varies across units",Physical core speed,1.1 / 1.2,NRc
+epr,U: constant,D: no clear trend (noise / quantised),B: changes only in some units (fault-mode?),D: no clear trend (noise / quantised),Engine pressure ratio (P50/P2),14.2 / 9.6,
+Ps30,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,Static pressure at HPC outlet,1.8 / 1.6,
+phi,A: consistent monotonic trend,A: consistent monotonic trend,"B: strong trend, direction varies across units","B: strong trend, direction varies across units",Ratio of fuel flow to Ps30,14.6 / 13.0,P30
+NRf,A: consistent monotonic trend,"B: strong trend, direction varies across units",A: consistent monotonic trend,"B: strong trend, direction varies across units",Corrected fan speed,3.8 / 1.6,Nf
+NRc,"B: strong trend, direction varies across units","B: strong trend, direction varies across units","B: strong trend, direction varies across units","B: strong trend, direction varies across units",Corrected core speed,1.1 / 1.2,Nc
+BPR,A: consistent monotonic trend,A: consistent monotonic trend,"B: strong trend, direction varies across units","B: strong trend, direction varies across units",Bypass Ratio,11.9 / 13.2,
+farB,U: constant,D: no clear trend (noise / quantised),U: constant,D: no clear trend (noise / quantised),Burner fuel-air ratio,- / 0.0,
+htBleed,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,A: consistent monotonic trend,Bleed Enthalpy,1.9 / 1.8,
+Nf_dmd,U: constant,U: condition-determined,U: constant,U: condition-determined,Demanded fan speed,- / -,
+PCNfR_dmd,U: constant,U: condition-determined,U: constant,U: condition-determined,Demanded corrected fan speed,- / -,
+W31,A: consistent monotonic trend,C: weak trend,"B: strong trend, direction varies across units",C: weak trend,HPT coolant bleed,11.6 / 9.8,
+W32,A: consistent monotonic trend,C: weak trend,"B: strong trend, direction varies across units",C: weak trend,LPT coolant bleed,11.7 / 9.8,

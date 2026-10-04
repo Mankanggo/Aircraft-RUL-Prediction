@@ -1,0 +1,44 @@
+[14:46:09] seed_noise FD001 F11_+cycle: RMSE over seeds [15.14, 15.35, 15.15, 15.15, 15.08]
+[14:53:09] seed_noise FD001 R1_F11 -expanding: RMSE over seeds [14.29, 14.24, 14.01, 14.09, 14.19]
+[14:57:54] seed_noise FD001 R2_F7 +cycle (minimal): RMSE over seeds [14.21, 14.32, 14.21, 14.28, 14.23]
+[14:58:00] tune: feature set = R2_F7 +cycle (minimal)
+[14:59:18] tune FD001: fold data built in 77s, 290 features
+[14:59:21] tune FD001 ridge: 5 configs @cap 125, best RMSE 18.97
+[14:59:24] tune FD001 ridge: selected cap 140, RMSE 19.56 ± 0.99
+C:\Users\Mayank\Aircravft_RUL\venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:827: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.279638e+04, tolerance: 2.860e+03
+  model = cd_fast.enet_coordinate_descent_gram(
+C:\Users\Mayank\Aircravft_RUL\venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:827: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.619188e+04, tolerance: 2.869e+03
+  model = cd_fast.enet_coordinate_descent_gram(
+C:\Users\Mayank\Aircravft_RUL\venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:827: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.056550e+04, tolerance: 2.860e+03
+  model = cd_fast.enet_coordinate_descent_gram(
+[14:59:45] tune FD001 elasticnet: 8 configs @cap 125, best RMSE 18.96
+C:\Users\Mayank\Aircravft_RUL\venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:827: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.904812e+04, tolerance: 2.620e+03
+  model = cd_fast.enet_coordinate_descent_gram(
+C:\Users\Mayank\Aircravft_RUL\venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:827: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.279638e+04, tolerance: 2.860e+03
+  model = cd_fast.enet_coordinate_descent_gram(
+[15:00:22] tune FD001 elasticnet: selected cap 140, RMSE 19.42 ± 0.89
+[15:05:41] tune FD001 random_forest: 6 configs @cap 125, best RMSE 15.45
+[15:17:23] tune FD001 random_forest: selected cap 140, RMSE 15.19 ± 0.36
+[15:24:18] tune FD001 xgboost: 8 configs @cap 125, best RMSE 13.95
+[15:28:54] tune FD001 xgboost: selected cap 130, RMSE 13.58 ± 0.43
+[15:34:46] tune FD001 lightgbm: 8 configs @cap 125, best RMSE 14.05
+[15:39:44] tune FD001 lightgbm: selected cap 140, RMSE 13.90 ± 0.38
+[15:41:00] finalize FD001 wide ridge: RMSE 26.02
+[15:41:06] finalize FD001 wide elasticnet: RMSE 25.88
+[15:42:35] finalize FD001 wide random_forest: RMSE 22.15
+[15:43:21] finalize FD001 wide xgboost: RMSE 22.70
+[15:44:17] finalize FD001 wide lightgbm: RMSE 20.77
+[15:45:23] finalize FD001 confirm ridge: RMSE 19.75
+C:\Users\Mayank\Aircravft_RUL\venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:827: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.494725e+04, tolerance: 3.631e+03
+  model = cd_fast.enet_coordinate_descent_gram(
+[15:45:30] finalize FD001 confirm elasticnet: RMSE 19.44
+[15:46:56] finalize FD001 confirm random_forest: RMSE 14.84
+[15:47:29] finalize FD001 confirm xgboost: RMSE 13.38
+[15:48:05] finalize FD001 confirm lightgbm: RMSE 13.85
+[15:49:02] finalize FD001 primary ridge: RMSE 19.56
+[15:49:07] finalize FD001 primary elasticnet: RMSE 19.42
+[15:50:32] finalize FD001 primary random_forest: RMSE 15.19
+[15:51:02] finalize FD001 primary xgboost: RMSE 13.58
+[15:51:32] finalize FD001 primary lightgbm: RMSE 13.90
+[15:52:02] finalize FD001: importance computed for xgboost
+[15:52:41] finalize FD001: importance computed for lightgbm

@@ -1,0 +1,6 @@
+subset,model,config_id,params,cap,rmse,mae,bias,phm08_score_per_sample,rmse_fold_std,feature_set
+FD002,ridge,0f959809ae,"{""alpha"": 0.1}",130.0,19.04898154920738,15.336914228292612,2.2957691764831543,6.781334932760147,0.9587150554581468,R2_F7 +cycle (minimal)
+FD002,elasticnet,7f183787df,"{""alpha"": 0.03, ""l1_ratio"": 0.2}",130.0,19.04158088994979,15.34763536306528,2.504841578556941,6.701799433703093,0.7968406300540014,R2_F7 +cycle (minimal)
+FD002,random_forest,26dbba0687,"{""max_features"": 0.3, ""max_samples"": 0.3, ""min_samples_leaf"": 5, ""n_estimators"": 200}",130.0,16.20579779990491,12.148233286055925,0.555177081393003,5.069309502442521,0.5238850447193373,R2_F7 +cycle (minimal)
+FD002,xgboost,3d6d9d21a3,"{""colsample_bytree"": 0.5, ""learning_rate"": 0.05, ""max_depth"": 4, ""min_child_weight"": 10, ""n_estimators"": 500, ""reg_lambda"": 1.0, ""subsample"": 0.7}",130.0,14.374832682298432,10.560010769550617,0.019906816115746132,3.667966197974121,0.36723933890263033,R2_F7 +cycle (minimal)
+FD002,lightgbm,4a99713abe,"{""colsample_bytree"": 0.5, ""learning_rate"": 0.05, ""min_child_samples"": 50, ""n_estimators"": 400, ""num_leaves"": 31, ""reg_lambda"": 1.0, ""subsample"": 0.8}",130.0,14.522686203170558,10.583996590022105,0.12722543849002763,3.720656072283579,0.3554434537710577,R2_F7 +cycle (minimal)

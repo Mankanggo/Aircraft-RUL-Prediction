@@ -1,0 +1,5 @@
+subset,group,engines,rmse,mae,bias,phm08_score,phm08_score_per_sample
+FD003,phi falls (HPC-like),56,15.52,10.97,0.29,2382.75,4.25
+FD003,phi rises (2nd mode),44,11.8,8.61,1.27,1172.01,2.66
+FD004,phi falls (HPC-like),148,15.5,11.41,1.41,7849.31,5.3
+FD004,phi rises (2nd mode),101,16.34,11.7,3.16,7530.66,7.46

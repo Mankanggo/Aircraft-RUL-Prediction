@@ -1,0 +1,7 @@
+# Development / notebook / test tooling (not package runtime dependencies)
+-r requirements.txt
+pytest
+ipykernel
+nbformat
+nbconvert
+shap

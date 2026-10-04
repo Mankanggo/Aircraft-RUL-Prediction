@@ -1,0 +1,9 @@
+,rows,units,missing_cells,inf_cells,duplicate_rows,duplicate_unit_cycle,duplicate_feature_vectors,unit_ids_are_1..n,cycles_contiguous_from_1,non_positive_sensor_cells,RUL_rows_match_test_units,RUL_missing
+FD001 train,20631,100,0,0,0,0,0,True,True,0,,
+FD001 test,13096,100,0,0,0,0,0,True,True,0,True,0.0
+FD002 train,53759,260,0,0,0,0,0,True,True,0,,
+FD002 test,33991,259,0,0,0,0,0,True,True,0,True,0.0
+FD003 train,24720,100,0,0,0,0,0,True,True,0,,
+FD003 test,16596,100,0,0,0,0,0,True,True,0,True,0.0
+FD004 train,61249,249,0,0,0,0,0,True,True,0,,
+FD004 test,41214,248,0,0,0,0,0,True,True,0,True,0.0

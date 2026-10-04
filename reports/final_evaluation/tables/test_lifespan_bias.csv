@@ -1,0 +1,9 @@
+subset,engines,n,"corr(error, implied lifespan)",bias short-lived,bias mid,bias long-lived,late > +10 among short-lived
+FD001,all engines,100,-0.55,8.11,-2.0,-6.92,14
+FD001,true RUL ≤ cap,92,-0.54,8.36,-0.34,-4.04,13
+FD002,all engines,259,-0.44,7.13,-7.09,-18.02,30
+FD002,true RUL ≤ cap,204,-0.43,10.07,1.13,-2.83,28
+FD003,all engines,100,-0.34,8.93,0.71,-0.86,14
+FD003,true RUL ≤ cap,96,-0.37,9.95,1.46,-0.1,14
+FD004,all engines,248,-0.31,7.23,-8.91,-9.42,27
+FD004,true RUL ≤ cap,196,-0.34,10.37,1.74,-0.02,24

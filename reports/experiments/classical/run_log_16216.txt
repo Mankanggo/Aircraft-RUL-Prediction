@@ -1,0 +1,3 @@
+[2026-10-04 14:58:06] seed_noise FD004 F11_+cycle: RMSE over seeds [17.13, 17.14, 17.2, 17.1, 16.98]
+[2026-10-04 15:07:00] seed_noise FD004 R1_F11 -expanding: RMSE over seeds [15.91, 15.96, 15.94, 15.88, 15.97]
+[2026-10-04 15:13:13] seed_noise FD004 R2_F7 +cycle (minimal): RMSE over seeds [15.85, 15.82, 15.88, 15.95, 15.87]

@@ -1,0 +1,12 @@
+,FD001,FD002,FD003,FD004
+operating conditions,1,6,1,6
+fault modes (readme),HPC,HPC,HPC + Fan,HPC + Fan
+train units / rows,100 / 20631,260 / 53759,100 / 24720,249 / 61249
+test units / rows,100 / 13096,259 / 33991,100 / 16596,248 / 41214
+train lifespan min/median/max,128 / 199 / 362,128 / 199 / 378,145 / 220 / 525,128 / 234 / 543
+test length min/median/max,31 / 134 / 303,21 / 132 / 367,38 / 148 / 475,19 / 154 / 486
+test true RUL min/median/max,7 / 86 / 145,6 / 80 / 194,6 / 78 / 145,6 / 88 / 195
+constant sensors,6,0,5,0
+condition-determined sensors,0,4,0,4
+"sensors with consistent trend (varies in ≥80% units, ≥95% same direction, |ρ|≥0.5)",12,8,7,5
+"sensors with mixed direction (<90% units, |ρ|≥0.5)",2,4,7,7

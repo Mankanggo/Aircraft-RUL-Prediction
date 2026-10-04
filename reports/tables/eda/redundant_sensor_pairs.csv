@@ -1,0 +1,9 @@
+subset,sensor_a,sensor_b,spearman
+FD001,Nc,NRc,0.886
+FD002,Nf,NRf,0.908
+FD002,Nc,NRc,0.858
+FD003,P30,phi,0.95
+FD003,Nf,NRf,0.905
+FD003,Nc,NRc,0.892
+FD004,Nf,NRf,0.951
+FD004,Nc,NRc,0.882

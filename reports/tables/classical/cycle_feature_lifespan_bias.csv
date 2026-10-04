@@ -1,0 +1,9 @@
+subset,features,rmse,"corr(bias, lifespan)",bias short-lived,bias mid,bias long-lived
+FD001,without cycle (F7),16.35,-0.85,5.84,-0.68,-11.33
+FD001,with cycle (R2),14.05,-0.73,4.28,-2.42,-7.72
+FD002,without cycle (F7),17.23,-0.84,9.12,-0.09,-12.09
+FD002,with cycle (R2),14.65,-0.65,6.42,-2.92,-7.09
+FD003,without cycle (F7),17.1,-0.52,6.0,-0.17,-11.55
+FD003,with cycle (R2),14.25,-0.43,3.8,-2.57,-7.93
+FD004,without cycle (F7),18.44,-0.61,8.06,-1.22,-9.28
+FD004,with cycle (R2),15.78,-0.46,4.53,-2.28,-5.72

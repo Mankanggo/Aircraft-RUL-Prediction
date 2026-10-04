@@ -1,0 +1,23 @@
+# Allow-list: deny everything, then re-include only what the image needs.
+# This excludes (among everything else): venv/, .venv/, data/, notebooks/, reports/, logs/, docs/,
+# .git/, *.egg-info/, scripts/, models other than models/final/, FINAL_CONFIG.md and README.md.
+*
+
+# runtime
+!requirements-api.txt
+!src
+!configs
+!models/final
+
+# test target only (the runtime stage never copies these)
+!tests/conftest.py
+!tests/api
+!tests/fixtures
+
+# never include, even inside allowed directories
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/.pytest_cache
+**/.ipynb_checkpoints
+**/*.egg-info

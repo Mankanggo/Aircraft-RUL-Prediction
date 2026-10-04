@@ -6,5 +6,7 @@ __pycache__/
 .ipynb_checkpoints/
 data/raw/
 data/processed/
-models/
+# Only the frozen final bundle is versioned (≈5 MB, hash-verified); other model outputs stay local.
+models/*
+!models/final/
 logs/

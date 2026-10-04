@@ -5,3 +5,4 @@ ipykernel
 nbformat
 nbconvert
 shap
+httpx

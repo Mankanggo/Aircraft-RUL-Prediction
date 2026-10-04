@@ -1,0 +1,5 @@
+subset,model,cap,rmse_reproduced,rmse_validated,match
+FD001,xgboost,130.0,13.581,13.581,True
+FD002,xgboost,130.0,14.3748,14.3748,True
+FD003,lightgbm,140.0,14.0013,14.0013,True
+FD004,lightgbm,140.0,15.846,15.846,True

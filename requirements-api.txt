@@ -1,0 +1,20 @@
+# Runtime requirements for the RUL inference API (src/api), exact pins.
+#
+# ML libraries: must equal the versions the frozen artifacts were trained/pickled with
+# (models/final/manifest.json -> "libraries"; scipy is scikit-learn's runtime dependency at the
+# trained version). The API refuses to start if numpy/pandas/scikit-learn/xgboost/lightgbm/joblib
+# differ from the manifest. Python must be 3.13 (manifest "python": 3.13.7).
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1
+lightgbm==4.7.0
+joblib==1.6.0
+
+# API runtime: the versions the API test suite (tests/api) was validated with.
+fastapi==0.142.2
+starlette==1.7.0
+pydantic==2.13.5
+uvicorn==0.54.0
+python-multipart==0.0.32

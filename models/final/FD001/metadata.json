@@ -1,0 +1,19 @@
+{
+  "subset": "FD001",
+  "family": "xgboost",
+  "rul_cap": 130.0,
+  "params": {
+    "colsample_bytree": 0.3,
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "min_child_weight": 1,
+    "n_estimators": 500,
+    "reg_lambda": 1.0,
+    "subsample": 0.85
+  },
+  "n_features": 290,
+  "train_engines": 100,
+  "train_rows": 20631,
+  "train_file_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "fit_seconds": 5.6
+}

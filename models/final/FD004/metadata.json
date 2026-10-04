@@ -1,0 +1,19 @@
+{
+  "subset": "FD004",
+  "family": "lightgbm",
+  "rul_cap": 140.0,
+  "params": {
+    "colsample_bytree": 0.5,
+    "learning_rate": 0.05,
+    "min_child_samples": 50,
+    "n_estimators": 500,
+    "num_leaves": 31,
+    "reg_lambda": 10.0,
+    "subsample": 0.85
+  },
+  "n_features": 290,
+  "train_engines": 249,
+  "train_rows": 61249,
+  "train_file_sha256": "27ef6160b6a1dcb2613a88de9c239f763b223f02cdc41dc5cdedc5dc189b6218",
+  "fit_seconds": 14.3
+}

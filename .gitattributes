@@ -1,0 +1,5 @@
+# Frozen, hash-verified artifacts: store byte-for-byte (no line-ending normalisation), so the
+# SHA-256 hashes recorded in models/final/manifest.json and configs/final_config.json remain
+# valid on every OS (core.autocrlf would otherwise rewrite CRLF in the JSON files).
+models/final/** -text
+configs/** -text

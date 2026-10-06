@@ -73,3 +73,21 @@ pytest tests            # full suite
 ```
 
 Regenerate the golden fixtures (truncated training engines, no labels) only if the frozen bundle changes: `python scripts/make_api_golden_fixture.py`.
+
+
+## 🚀 Live Deployment Demo
+
+The trained Aircraft RUL prediction system is deployed on AWS Elastic
+Beanstalk and exposed through a FastAPI REST API.
+
+The demo shows:
+- AWS Elastic Beanstalk deployment
+- FastAPI Swagger interface
+- Uploading the C-MAPSS FD001 dataset
+- Live RUL inference
+- Successful HTTP 200 response
+- Predictions for all 100 engines
+
+### Deployment Demo
+
+[▶️ Watch the AWS Deployment Demo](docs/demo/aws-deployment-demo.mp4)
